@@ -1,0 +1,15 @@
+[tool.ruff]
+# Allow lines to be as long as 80 characters.
+line-length = 80
+
+[tool.ruff.lint]
+# Enable all `pydocstyle` rules ('D'), as well as PyFlakes ('F'), pycodestyle
+# ('E'), and pycodestyle warnings ('W')
+select = ["D", "E", "F", "W"]
+
+# On top of the Google convention, disable `D417`, which requires
+# documentation for every function parameter.
+ignore = ["D417"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
