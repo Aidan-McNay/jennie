@@ -1,6 +1,7 @@
 """A representation of a specialty concert.
 
-A specialty concert is special request, where a single Chimesmaster signs up to play
+A specialty concert is special request, where a single Chimesmaster signs up to
+play
 
 Author: Aidan McNay
 Date: June 15th, 2024
@@ -30,7 +31,7 @@ class Contact:
 
 
 class SpecialtyConcert:
-    """A Specialty Concert represents a one-off request, played by one Chimesmaster.
+    """A one-off concert request, played by one Chimesmaster.
 
     Attributes:
      - `name`: Name of the concert (str)

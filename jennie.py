@@ -1,7 +1,4 @@
-# ==========================================================================
-# jennie.py
-# ==========================================================================
-# A starting app for the Jennie Slack Bot
+"""A starting app for the Jennie Slack Bot."""
 
 import os
 from dotenv import load_dotenv
@@ -28,7 +25,7 @@ app = App(token=os.environ.get("SLACK_BOT_TOKEN"))
 
 @app.message("Hello")
 def message_hello(message, say):
-    # say() sends a message to the channel where the event was triggered
+    """Send a message to the channel where the event was triggered."""
     say(f"Hey there, <@{message['user']}>!")
 
 
