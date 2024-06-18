@@ -2,9 +2,10 @@
 
 import os
 from dotenv import load_dotenv
-
 from slack_bolt import App
+from slack_bolt.response import BoltResponse
 from slack_bolt.adapter.socket_mode import SocketModeHandler
+from typing import Callable, Optional
 
 # --------------------------------------------------------------------------
 # Load environment variable secrets from .env
@@ -24,7 +25,9 @@ app = App(token=os.environ.get("SLACK_BOT_TOKEN"))
 
 
 @app.message("Hello")
-def message_hello(message, say):
+def message_hello(
+    message: dict, say: Callable[..., Optional[BoltResponse]]
+) -> None:
     """Send a message to the channel where the event was triggered."""
     say(f"Hey there, <@{message['user']}>!")
 

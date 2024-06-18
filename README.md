@@ -2,6 +2,7 @@
 
 <div align="center">
    <img src="https://github.com/Aidan-McNay/jennie/actions/workflows/ruff.yml/badge.svg">
+   <img src="https://github.com/Aidan-McNay/jennie/actions/workflows/mypy.yml/badge.svg">
 </div>
 
 A Slack bot used internally by the Cornell Chimes, aimed at keeping track of logistical matters. It is named after the namesake of the home of the Chimes (McGraw Tower), Jennie McGraw
